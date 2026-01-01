@@ -1,14 +1,50 @@
-<div align="center">
+# `class Krupanjac extends SoftwareEngineer`
 
-# Arsen Đurđev
+```typescript
+/**
+ * Arsen Đurđev (Krupanjac)
+ * Systems Architect • Backend Engineer • Performance Specialist
+ */
+interface EngineerProfile {
+    core: {
+        languages: ["C++", "C", "C3", "TypeScript", "Python"];
+        systems: ["OpenGL", "Voxel Engines", "Memory Optimization", "Multi-threading"];
+        backend: ["Node.js", "TypeScript", "PostgreSQL", "REST APIs"];
+        algorithms: ["BST", "Fibonacci Heaps", "B* Trees", "Graph Algorithms"];
+    };
+    focus: "Building high-performance systems from the ground up";
+    status: "Compiling...";
+}
+```
 
-**Systems Engineer • Backend Architect**
-
-[`krupanjac.dev`](https://krupanjac.dev) • [`linkedin/arsendjurdjev`](https://linkedin.com/in/arsendjurdjev)
-
-</div>
+**[`krupanjac.dev`](https://krupanjac.dev)** • **[`linkedin/arsendjurdjev`](https://linkedin.com/in/arsendjurdjev)**
 
 ---
+
+## 📡 Technical Focus
+
+```mermaid
+graph TD
+    subgraph Systems ["Low-Level Systems"]
+        Engine[C++ Voxel Engine] -->|OpenGL| GPU[Graphics Pipeline]
+        ML[C Neural Networks] -->|Training| Models[ML Models]
+        Algo[Data Structures] -->|Optimization| Perf[Performance]
+    end
+    
+    subgraph Backend ["Backend Development"]
+        API[TypeScript/Node.js] -->|REST| DB[(PostgreSQL)]
+        Web[Backend APIs] -->|Scalable| API
+    end
+    
+    subgraph Tools ["Scripting & Automation"]
+        Python[Python Tools] -->|Utilities| Systems
+        Scripts[Bash/Lua] -->|Config| Dev[Dev Environment]
+    end
+
+    style Systems fill:#1e1e1e,stroke:#d07a16,stroke-width:2px,color:#fff
+    style Backend fill:#1e1e1e,stroke:#3178C6,stroke-width:2px,color:#fff
+    style Tools fill:#1e1e1e,stroke:#3776AB,stroke-width:2px,color:#fff
+```
 
 ## Overview
 
@@ -22,6 +58,21 @@ Backend     →  TypeScript, Node.js, PostgreSQL, REST APIs
 Algorithms  →  BST, Fibonacci Heaps, B* Trees, Graph Algorithms
 Tools       →  Python, Lua, Bash, Neovim, Git
 ```
+
+## 🛠️ Technology Stack
+
+| Domain | Technologies |
+|:--- |:--- |
+| **Systems & Graphics** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black) ![OpenGL](https://img.shields.io/badge/-OpenGL-FFFFFF?style=flat-square&logo=opengl) ![C3](https://img.shields.io/badge/-C3-5C2D91?style=flat-square) |
+| **Backend & Web** | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Postgres](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
+| **Scripting & Tools** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Lua](https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
+
+## 📊 Repository Analytics
+
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krupanjac&layout=compact&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&hide=css,html,shell" height="150" alt="languages" />
+</div>
 
 ## Notable Projects
 
@@ -55,11 +106,6 @@ Game development project showcasing systems programming, game physics, and rende
 
 <div align="center">
 
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![C](https://img.shields.io/badge/-C-A8B9CC?style=flat&logo=c&logoColor=black)
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![OpenGL](https://img.shields.io/badge/-OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)
+**Built with** ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat&logo=c&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![OpenGL](https://img.shields.io/badge/-OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)
 
 </div>
