@@ -10,7 +10,7 @@ interface EngineerProfile {
         languages: ["C++", "C", "C3", "TypeScript", "Python"];
         systems: ["OpenGL", "Voxel Engines", "Memory Optimization", "Multi-threading"];
         backend: ["Node.js", "TypeScript", "PostgreSQL", "REST APIs"];
-        algorithms: ["BST", "Fibonacci Heaps", "B* Trees", "Graph Algorithms"];
+        algorithms: ["Binary Search Trees", "Fibonacci Heaps", "B* Trees", "Graph Algorithms"];
     };
     focus: "Building high-performance systems from the ground up";
     status: "Compiling...";
@@ -33,7 +33,7 @@ graph TD
     
     subgraph Backend ["Backend Development"]
         API[TypeScript/Node.js] -->|REST| DB[(PostgreSQL)]
-        Web[Backend APIs] -->|Scalable| API
+        Services[Backend Services] -->|Scalable| API
     end
     
     subgraph Tools ["Scripting & Automation"]
@@ -70,8 +70,8 @@ Tools       →  Python, Lua, Bash, Neovim, Git
 ## 📊 Repository Analytics
 
 <div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krupanjac&layout=compact&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&hide=css,html,shell" height="150" alt="languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="GitHub contribution statistics" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krupanjac&layout=compact&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&hide=css,html,shell" height="150" alt="Top programming languages used" />
 </div>
 
 ## Notable Projects
