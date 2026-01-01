@@ -2,91 +2,101 @@
 
 ```bash
 $ ./whoami.sh
-> Initializing backend services...
-> Loading profile... 100%
+> Booting up core systems...
+> Loading C++ modules... OK
+> Initializing TypeScript runtime... OK
+> Mounting Node.js backend services... OK
+> User profile loaded: Active
 ```
 
-### 📡 System Architecture
+### 📡 Architecture
 
 ```mermaid
 graph LR
-    Client(User) -- HTTPS --> LB{Load Balancer}
-    LB -- /GET profile --> API[krupanjac-api]
-    API -- Query --> DB[(Skills DB)]
-    DB -- Result --> API
-    API -- JSON --> Client
-    style API fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
+    User((Client)) -->|HTTPS/WSS| Gate{Gateway}
+    Gate -->|Routing| Web[Web Applications]
+    Gate -->|API Requests| Node[Node.js Backend]
+    Node -->|Queries| DB[(Database)]
+    Node <-->|Compute| CPP[C++ Native Modules]
+    
+    style Node fill:#339933,stroke:#fff,stroke-width:2px,color:#fff
+    style CPP fill:#00599C,stroke:#fff,stroke-width:2px,color:#fff
+    style Web fill:#3178C6,stroke:#fff,stroke-width:2px,color:#fff
+    style User fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
+    style Gate fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
     style DB fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
-    style LB fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
-    style Client fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
-### 💾 HTTP Response
+### 💾 API Response
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-X-Powered-By: Coffee
-Date: Mon, 01 Jan 2026 12:00:00 GMT
+Server: krupanjac-engine/v1.0
+Date: Thu, 01 Jan 2026 12:00:00 GMT
 ```
 
 ```json
 {
-  "data": {
-    "id": "krupanjac",
-    "type": "Backend Engineer",
-    "attributes": {
-      "intelligence": "Artificial & Natural",
-      "languages": ["Python", "Go", "Rust", "SQL"],
-      "infrastructure": ["Docker", "Kubernetes", "AWS", "Linux"],
-      "database": ["PostgreSQL", "Redis", "MongoDB"],
-      "status": "Building scalable systems",
-      "location": "127.0.0.1"
+  "user": {
+    "handle": "krupanjac",
+    "role": "Fullstack & Systems Engineer",
+    "stack": {
+      "languages": ["C++", "TypeScript", "JavaScript", "Python", "GLSL"],
+      "backend": ["Node.js", "REST/GraphQL", "Microservices"],
+      "frontend": ["HTML5/SCSS", "Modern Web Frameworks"],
+      "systems": ["OpenGL", "Memory Management", "Performance Optimization"]
+    },
+    "current_focus": {
+      "project": "minecraft-cpp",
+      "description": "Voxel engine from scratch using C++ & OpenGL",
+      "status": "Optimizing rendering pipeline"
     },
     "links": {
       "github": "https://github.com/krupanjac",
-      "linkedin": "https://linkedin.com/in/krupanjac"
+      "portfolio": "https://github.com/Krupanjac/arsen-portfolio-2025"
     }
   }
 }
 ```
 
-### 🛠️ `sudo apt-get install skills`
+### 🛠️ `apt list --installed`
 
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=flat-square&logo=go&logoColor=white)
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat-square&logo=rust&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat-square&logo=docker&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat-square&logo=postgresql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat-square&logo=opengl)
 
-### 📝 `tail -f /var/log/dev.log`
+### 📝 `tail -f /var/log/syslog`
 
 ```diff
-+ 🔭 I’m currently working on High availability distributed systems
-+ 🌱 I’m currently learning eBPF and Kernel tuning
-+ 👯 I’m looking to collaborate on Open Source Backend Tooling
-! ⚡ Fun fact: I dream in JSON.
++ [INFO] Developing high-performance voxel engine in C++
++ [INFO] Building scalable backend architectures with Node.js
++ [INFO] Crafting responsive web interfaces with TypeScript
+! [WARN] Coffee levels critical: Refill required
 ```
 
 <details>
-<summary><b>🛑 sudo systemctl status motivation</b></summary>
+<summary><b>⚙️ systemctl status dev-daemon</b></summary>
 
 ```ini
-● motivation.service - Daily Coding Drive
-   Loaded: loaded (/lib/systemd/system/motivation.service; enabled; vendor preset: enabled)
-   Active: active (running) since Mon 2026-01-01 08:00:00 UTC; 4h 20min ago
- Main PID: 1337 (brain)
-    Tasks: 42 (limit: 4915)
-   Memory: 99.9%
-   CGroup: /system.slice/motivation.service
-           └─1337 /usr/bin/brain --focus=backend --coffee=true
+● dev-daemon.service - Main Development Loop
+   Loaded: loaded (/etc/systemd/system/dev-daemon.service; enabled)
+   Active: active (running) since Mon 2018-01-01 00:00:00 UTC
+ Main PID: 8080 (krupanjac)
+    Tasks: 64 (limit: 32768)
+   Memory: 16GB
+   CGroup: /user.slice/dev-daemon.service
+           ├─8080 /usr/bin/node server.js --env=production
+           └─8081 /usr/bin/main_engine --render=opengl
 ```
 </details>
 
 ---
 ```console
-krupanjac@github:~$ exit
-logout
-Connection to localhost closed.
+root@krupanjac:~# echo "Let's build something."
+Let's build something.
+root@krupanjac:~# logout
 ```
