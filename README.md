@@ -48,14 +48,13 @@ graph TD
 
 ## Overview
 
-Backend engineer specializing in high-performance systems, algorithms, and low-level programming. Focused on building efficient software from the ground up—game engines, neural networks, and scalable backend architectures.
+Software engineer specializing in high-performance systems, algorithms, and low-level programming. Focused on building efficient software from the ground up—game engines, neural networks, and scalable backend architectures.
 
 ## Core Technologies
 
 ```
 Systems     →  C++, C, C3, OpenGL, Multi-threading, Memory Optimization
 Backend     →  TypeScript, Node.js, PostgreSQL, REST APIs
-Algorithms  →  BST, Fibonacci Heaps, B* Trees, Graph Algorithms
 Tools       →  Python, Lua, Bash, Neovim, Git
 ```
 
@@ -63,7 +62,7 @@ Tools       →  Python, Lua, Bash, Neovim, Git
 
 | Domain | Technologies |
 |:--- |:--- |
-| **Systems & Graphics** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black) ![OpenGL](https://img.shields.io/badge/-OpenGL-FFFFFF?style=flat-square&logo=opengl) ![C3](https://img.shields.io/badge/-C3-5C2D91?style=flat-square) |
+| **Systems & Graphics** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black) ![OpenGL](https://img.shields.io/badge/-OpenGL-FFFFFF?style=flat-square&logo=opengl) |
 | **Backend & Web** | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Postgres](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
 | **Scripting & Tools** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Lua](https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
 
