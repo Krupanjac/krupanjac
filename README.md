@@ -1,102 +1,88 @@
-# `~/krupanjac`
+# `class Krupanjac extends SoftwareEngineer`
 
-```bash
-$ ./whoami.sh
-> Booting up core systems...
-> Loading C++ modules... OK
-> Initializing TypeScript runtime... OK
-> Mounting Node.js backend services... OK
-> User profile loaded: Active
+```typescript
+/**
+ * Arsen Đurđev (Krupanjac)
+ * Fullstack Systems Architect & Performance Engineer
+ */
+interface EngineerProfile {
+    core: {
+        languages: ["TypeScript", "C++", "Python", "Go"];
+        backend: ["Node.js", "Microservices", "gRPC", "PostgreSQL"];
+        systems: ["OpenGL", "Memory Optimization", "Multi-threading"];
+        frontend: ["React", "Next.js", "WebGL"];
+    };
+    focus: "Building scalable, high-performance distributed systems";
+    status: "Compiling...";
+}
+
+const me: EngineerProfile = {
+    // ...initializing dependencies
+};
 ```
 
-### 📡 Architecture
+### 📡 System Architecture
 
 ```mermaid
-graph LR
-    User((Client)) -->|HTTPS/WSS| Gate{Gateway}
-    Gate -->|Routing| Web[Web Applications]
-    Gate -->|API Requests| Node[Node.js Backend]
-    Node -->|Queries| DB[(Database)]
-    Node <-->|Compute| CPP[C++ Native Modules]
+graph TD
+    User((Client)) -->|HTTPS/WSS| LB{Load Balancer}
+    LB -->|Routing| Gateway[API Gateway]
     
-    style Node fill:#339933,stroke:#fff,stroke-width:2px,color:#fff
-    style CPP fill:#00599C,stroke:#fff,stroke-width:2px,color:#fff
-    style Web fill:#3178C6,stroke:#fff,stroke-width:2px,color:#fff
-    style User fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
-    style Gate fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
-    style DB fill:#1f2020,stroke:#fff,stroke-width:2px,color:#fff
+    subgraph Services [Backend Cluster]
+        Gateway -->|gRPC| Auth[Auth Service]
+        Gateway -->|REST| Core[Core API]
+        Gateway -->|Socket| Realtime[Realtime Svc]
+        
+        Core -->|Write| PrimaryDB[(PostgreSQL)]
+        Core -->|Read| ReadReplica[(PostgreSQL - Read)]
+        Realtime -->|Pub/Sub| Redis[(Redis Cache)]
+    end
+    
+    subgraph Native [High Performance]
+        Engine[C++ Voxel Engine] <-->|FFI| Core
+        GPU[OpenGL/Vulkan] <--> Engine
+    end
+
+    style Services fill:#1e1e1e,stroke:#333,stroke-width:2px,color:#fff
+    style Native fill:#1e1e1e,stroke:#d07a16,stroke-width:2px,color:#fff
+    style Gateway fill:#2d699e,stroke:#fff,stroke-width:0px,color:#fff
 ```
 
-### 💾 API Response
+### 🛠️ Technology Stack
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Server: krupanjac-engine/v1.0
-Date: Thu, 01 Jan 2026 12:00:00 GMT
-```
+| Domain | Technologies |
+|:--- |:--- |
+| **Backend & Cloud** | ![NodeJS](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white) ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Postgres](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white) |
+| **Systems & Native** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![OpenGL](https://img.shields.io/badge/-OpenGL-FFFFFF?style=flat-square&logo=opengl) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
+| **Frontend & Web** | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black) ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![SASS](https://img.shields.io/badge/-SASS-CC6699?style=flat-square&logo=sass&logoColor=white) |
+
+### 📊 Repository Analytics
+
+<div align="left">
+  <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krupanjac&layout=compact&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&hide=css,html,shell" height="150" alt="languages" />
+</div>
+
+### 💾 Selected Works
 
 ```json
-{
-  "user": {
-    "handle": "krupanjac",
-    "role": "Fullstack & Systems Engineer",
-    "stack": {
-      "languages": ["C++", "TypeScript", "JavaScript", "Python", "GLSL"],
-      "backend": ["Node.js", "REST/GraphQL", "Microservices"],
-      "frontend": ["HTML5/SCSS", "Modern Web Frameworks"],
-      "systems": ["OpenGL", "Memory Management", "Performance Optimization"]
-    },
-    "current_focus": {
-      "project": "minecraft-cpp",
-      "description": "Voxel engine from scratch using C++ & OpenGL",
-      "status": "Optimizing rendering pipeline"
-    },
-    "links": {
-      "github": "https://github.com/krupanjac",
-      "portfolio": "https://github.com/Krupanjac/arsen-portfolio-2025"
-    }
+[
+  {
+    "project": "minecraft-cpp",
+    "type": "Game Engine",
+    "stack": ["C++", "OpenGL", "GLSL"],
+    "description": "High-performance voxel rendering engine with custom memory allocators."
+  },
+  {
+    "project": "gyst-ecosystem",
+    "type": "Fullstack Platform",
+    "stack": ["Node.js", "TypeScript", "Swift"],
+    "description": "Distributed backend systems for mobile application synchronization."
   }
-}
+]
 ```
 
-### 🛠️ `apt list --installed`
-
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)
-![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=flat-square&logo=opengl)
-
-### 📝 `tail -f /var/log/syslog`
-
-```diff
-+ [INFO] Developing high-performance voxel engine in C++
-+ [INFO] Building scalable backend architectures with Node.js
-+ [INFO] Crafting responsive web interfaces with TypeScript
-! [WARN] Coffee levels critical: Refill required
-```
-
-<details>
-<summary><b>⚙️ systemctl status dev-daemon</b></summary>
-
-```ini
-● dev-daemon.service - Main Development Loop
-   Loaded: loaded (/etc/systemd/system/dev-daemon.service; enabled)
-   Active: active (running) since Mon 2018-01-01 00:00:00 UTC
- Main PID: 8080 (krupanjac)
-    Tasks: 64 (limit: 32768)
-   Memory: 16GB
-   CGroup: /user.slice/dev-daemon.service
-           ├─8080 /usr/bin/node server.js --env=production
-           └─8081 /usr/bin/main_engine --render=opengl
-```
-</details>
-
----
-```console
-root@krupanjac:~# echo "Let's build something."
-Let's build something.
-root@krupanjac:~# logout
-```
+<!-- Footer -->
+<div align="right">
+  <code>echo "contact: linked/in/krupanjac" >> /dev/null</code>
+</div>
