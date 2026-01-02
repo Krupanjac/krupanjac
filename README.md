@@ -97,10 +97,7 @@ Tooling & Workflow    →  Automation, debugging, profiling, build systems
 
 ## `class RepositoryAnalytics : Krupanjac`
 
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="GitHub contribution statistics" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krupanjac&layout=compact&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&hide=css,html,shell" height="150" alt="Top programming languages used" />
-</div>
+![GitHub Card](https://githubcard.com/Krupanjac.svg)
 
 ## Notable Projects
 
