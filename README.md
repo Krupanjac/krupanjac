@@ -21,32 +21,48 @@ interface EngineerProfile {
 
 ---
 
-## 📡 Technical Focus
+## `class TechnicalFocus : public Krupanjac`
 
 ```mermaid
 graph TD
-    subgraph Systems ["Low-Level Systems"]
-        Engine[C++ Voxel Engine] -->|OpenGL| GPU[Graphics Pipeline]
-        ML[C Neural Networks] -->|Training| Models[ML Models]
-        Algo[Data Structures] -->|Optimization| Perf[Performance]
-    end
-    
-    subgraph Backend ["Backend Development"]
-        API[TypeScript/Node.js] -->|REST| DB[(PostgreSQL)]
-        Services[Backend Services] -->|Scalable| API
-    end
-    
-    subgraph Tools ["Scripting & Automation"]
-        Python[Python Tools] -->|Utilities| Systems
-        Scripts[Bash/Lua] -->|Config| Dev[Dev Environment]
+    subgraph Core ["Core Systems Engineering"]
+        LowLevel[Low-Level Programming] -->|Efficiency| Runtime[Runtime Performance]
+        Memory[Memory Management] -->|Control| Stability[System Stability]
+        Concurrency[Concurrency & Parallelism] -->|Scaling| Throughput[High Throughput]
+        Algorithms[Algorithms & Data Structures] -->|Optimization| Runtime
     end
 
-    style Systems fill:#1e1e1e,stroke:#d07a16,stroke-width:2px,color:#fff
-    style Backend fill:#1e1e1e,stroke:#3178C6,stroke-width:2px,color:#fff
-    style Tools fill:#1e1e1e,stroke:#3776AB,stroke-width:2px,color:#fff
+    subgraph Architecture ["Software Architecture"]
+        Design[System Design] -->|Abstractions| Modules[Modular Components]
+        Interfaces[Clear Interfaces] -->|Contracts| Integration[System Integration]
+        Optimization[Performance-Oriented Design] -->|Tradeoffs| Design
+    end
+
+    subgraph Backend ["Backend & Services"]
+        Services[Backend Services] -->|APIs| Communication[Inter-Process Communication]
+        Data[Data Modeling] -->|Consistency| Storage[Persistent Storage]
+        Scaling[Scalability Strategies] -->|Load| Services
+    end
+
+    subgraph Tooling ["Tooling & Automation"]
+        Scripting[Scripting & Automation] -->|Productivity| Workflow[Developer Workflow]
+        Debugging[Profiling & Debugging] -->|Insights| Optimization
+        Build[Build & Deployment] -->|Reliability| Systems
+    end
+
+    Core --> Architecture
+    Architecture --> Backend
+    Core --> Tooling
+    Tooling --> Architecture
+
+    style Core fill:#1e1e1e,stroke:#d07a16,stroke-width:2px,color:#ffffff
+    style Architecture fill:#1e1e1e,stroke:#6f42c1,stroke-width:2px,color:#ffffff
+    style Backend fill:#1e1e1e,stroke:#3178C6,stroke-width:2px,color:#ffffff
+    style Tooling fill:#1e1e1e,stroke:#3776AB,stroke-width:2px,color:#ffffff
+
 ```
 
-## Overview
+## `class Overview : Krupanjac`
 
 Software engineer specializing in high-performance systems, algorithms, and low-level programming. Focused on building efficient software from the ground up—game engines, neural networks, and scalable backend architectures.
 
@@ -58,15 +74,15 @@ Backend     →  TypeScript, Node.js, PostgreSQL, REST APIs
 Tools       →  Python, Lua, Bash, Neovim, Git
 ```
 
-## 🛠️ Technology Stack
+## `class TechnologyStack : Krupanjac`
 
 | Domain | Technologies |
 |:--- |:--- |
-| **Systems & Graphics** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black) ![OpenGL](https://img.shields.io/badge/-OpenGL-FFFFFF?style=flat-square&logo=opengl) |
+| **Systems** | ![C++](https://img.shields.io/badge/-C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)  |
 | **Backend & Web** | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![NodeJS](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=node.js&logoColor=white) ![Postgres](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
-| **Scripting & Tools** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Lua](https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
+| **Scripting** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Lua](https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
 
-## 📊 Repository Analytics
+## `class RepositoryAnalytics : Krupanjac`
 
 <div align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=Krupanjac&show_icons=true&theme=transparent&hide_border=true&title_color=3178C6&text_color=8b949e&icon_color=3178C6&count_private=true&include_all_commits=true" height="150" alt="GitHub contribution statistics" />
@@ -97,14 +113,8 @@ Game development project showcasing systems programming, game physics, and rende
 - **[`direct-k-way`](https://github.com/Krupanjac/direct-k-way)** — K-way merge iterator
 
 ### Backend & Tools
-- **[`moneta`](https://github.com/Krupanjac/moneta)** — Financial tracking system with TypeScript/React
+- **[`moneta`](https://github.com/Krupanjac/moneta)** — Financial system with TypeScript/Angular
 - **[`CLI`](https://github.com/Krupanjac/CLI)** — C++ command-line interface framework
 - **[`nvim-conf`](https://github.com/Krupanjac/nvim-conf)** — Personal Neovim configuration
 
 ---
-
-<div align="center">
-
-**Built with** ![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat&logo=c&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white) ![OpenGL](https://img.shields.io/badge/-OpenGL-5586A4?style=flat&logo=opengl&logoColor=white)
-
-</div>
