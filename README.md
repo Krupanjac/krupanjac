@@ -3,18 +3,26 @@
 ```typescript
 /**
  * Arsen Đurđev (Krupanjac)
- * Systems Architect • Backend Engineer • Performance Specialist
+ * Software Engineer — Systems, Architecture, Performance
  */
 interface EngineerProfile {
-    core: {
-        languages: ["C++", "C", "C3", "TypeScript", "Python"];
-        systems: ["OpenGL", "Voxel Engines", "Memory Optimization", "Multi-threading"];
-        backend: ["Node.js", "TypeScript", "PostgreSQL", "REST APIs"];
-        algorithms: ["Binary Search Trees", "Fibonacci Heaps", "B* Trees", "Graph Algorithms"];
+    foundation: {
+        paradigm: ["Low-Level Systems", "Abstraction-Oriented Design", "Performance Engineering"];
+        principles: ["Correctness", "Efficiency", "Scalability", "Maintainability"];
     };
-    focus: "Building high-performance systems from the ground up";
+
+    competencies: {
+        systems: "Resource-aware, deterministic software";
+        architecture: "Composable, modular, and evolvable systems";
+        backend: "Reliable services and data-driven applications";
+        algorithms: "Data structures and algorithmic optimization";
+    };
+
+    focus: "Designing and building efficient systems from first principles";
+    mindset: "Understand the machine, control the system";
     status: "Compiling...";
 }
+
 ```
 
 **[`krupanjac.dev`](https://krupanjac.dev)** • **[`linkedin/arsendjurdjev`](https://linkedin.com/in/arsendjurdjev)**
