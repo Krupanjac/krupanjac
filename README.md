@@ -74,15 +74,18 @@ graph TD
 
 Software engineer specializing in high-performance systems, algorithms, and low-level programming. Focused on building efficient software from the ground up—game engines, neural networks, and scalable backend architectures.
 
-## Core Technologies
+## `class CoreTechnology : Overview`
 
 ```
-Systems     →  C++, C, C3, OpenGL, Multi-threading, Memory Optimization
-Backend     →  TypeScript, Node.js, PostgreSQL, REST APIs
-Tools       →  Python, Lua, Bash, Neovim, Git
+Systems Engineering   →  Low-level programming, memory models, concurrency, performance tuning
+Architecture          →  Modular design, clear interfaces, abstraction boundaries
+Backend Systems       →  Service design, data modeling, API-driven systems
+Algorithms            →  Data structures, complexity analysis, optimization techniques
+Tooling & Workflow    →  Automation, debugging, profiling, build systems
+
 ```
 
-## `class TechnologyStack : Krupanjac`
+## `class TechnologyStack : Overview`
 
 | Domain | Technologies |
 |:--- |:--- |
