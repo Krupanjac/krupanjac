@@ -97,7 +97,7 @@ Tooling & Workflow    →  Automation, debugging, profiling, build systems
 
 ## `class RepositoryAnalytics : Krupanjac`
 
-![GitHub Card](https://githubcard.com/Krupanjac.svg)
+![GitHub Card](https://githubcard.com/g/0YqbSURo.svg)
 
 ## Notable Projects
 
