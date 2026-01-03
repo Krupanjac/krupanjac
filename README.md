@@ -99,32 +99,4 @@ Tooling & Workflow    →  Automation, debugging, profiling, build systems
 
 ![GitHub Card](https://githubcard.com/g/0YqbSURo.svg)
 
-## Notable Projects
-
-### [`minecraft-cpp`](https://github.com/Krupanjac/minecraft-cpp)
-Voxel engine built from scratch in C++ using OpenGL. Features advanced chunk management, optimized rendering pipeline, and high FPS performance.
-
-**Tech:** C++20, OpenGL, GLSL, CMake
-
-### [`xor-neural-network-in-c`](https://github.com/Krupanjac/xor-neural-network-in-c)
-Neural network implementation from scratch without ML libraries. Demonstrates gradient descent, backpropagation, and numerical differentiation.
-
-**Tech:** C, Machine Learning
-
-### [`counter-strike-cpp`](https://github.com/Krupanjac/counter-strike-cpp)
-Game development project showcasing systems programming, game physics, and rendering techniques.
-
-**Tech:** C++, Game Development
-
-### Data Structures & Algorithms
-- **[`Bstar-database-search`](https://github.com/Krupanjac/Bstar-database-search)** — B* tree implementation for database indexing
-- **[`Fibonacci-Heap-Inventory-System`](https://github.com/Krupanjac/Fibonacci-Heap-Inventory-System)** — Max/min heap implementation
-- **[`contactbook-BST`](https://github.com/Krupanjac/contactbook-BST)** — Binary search tree with self-organizing lists
-- **[`direct-k-way`](https://github.com/Krupanjac/direct-k-way)** — K-way merge iterator
-
-### Backend & Tools
-- **[`moneta`](https://github.com/Krupanjac/moneta)** — Financial system with TypeScript/Angular
-- **[`CLI`](https://github.com/Krupanjac/CLI)** — C++ command-line interface framework
-- **[`nvim-conf`](https://github.com/Krupanjac/nvim-conf)** — Personal Neovim configuration
-
 ---
