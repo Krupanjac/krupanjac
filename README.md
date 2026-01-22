@@ -95,8 +95,4 @@ Tooling & Workflow    →  Automation, debugging, profiling, build systems
 | **Scripting** | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Lua](https://img.shields.io/badge/-Lua-2C2D72?style=flat-square&logo=lua&logoColor=white) ![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
 | **OS** | ![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff) ![Windows](https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white)|
 
-## `class RepositoryAnalytics : Krupanjac`
-
-![GitHub Card](https://githubcard.com/g/0YqbSURo.svg)
-
 ---
